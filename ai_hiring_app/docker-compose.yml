@@ -1,0 +1,24 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/hiring_db
+      - HUGGINGFACE_API_KEY=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 # <-- MAKE SURE THIS IS YOUR REAL TOKEN
+      - DEEPGRAM_API_KEY=76143c190f573f9abe4168e3ba9906460060cb23
+      - ELEVENLABS_API_KEY=sk_07446a26743cda964c08eb02ae9f063e39720f9fc22237ea
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=hiring_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+
+volumes:
+  postgres_data:

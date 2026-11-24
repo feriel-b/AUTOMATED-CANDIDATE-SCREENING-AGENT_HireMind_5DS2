@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+
+# NLP and AI
+spacy
+requests
+python-multipart
+# Document Parsing
+python-docx
+pypdf
+deepgram-sdk>=3.0.0
+elevenlabs
