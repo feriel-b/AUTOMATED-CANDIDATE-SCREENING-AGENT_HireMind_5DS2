@@ -1,0 +1,19 @@
+# In requirements.txt
+
+# Web Framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+psycopg2-binary
+huggingface_hub
+# --- ONLY DOCUMENT PARSING LIBRARIES ---
+python-docx
+pypdf
+# -------------------------------------
+
+# Other utilities
+Faker
+requests

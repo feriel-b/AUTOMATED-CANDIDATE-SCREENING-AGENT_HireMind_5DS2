@@ -1,0 +1,20 @@
+# Backend - Python / Docker
+ai_hiring_app/__pycache__/
+ai_hiring_app/*.pyc
+ai_hiring_app/venv/
+.dockerignore
+
+# Frontend - Node.js / React
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+frontend/.DS_Store
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp

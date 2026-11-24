@@ -1,0 +1,38 @@
+# FILE: docker-compose.yml
+# --- REWRITTEN FOR API-ONLY ---
+
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app  # This enables hot-reloading
+    depends_on:
+      db:
+        condition: service_healthy # Kept for startup robustness
+    environment:
+      DATABASE_URL: postgresql://user:password@db:5432/hiring_db
+      HF_TOKEN:: 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
+      DEEPGRAM_API_KEY: 76143c190f573f9abe4168e3ba9906460060cb23
+      ELEVENLABS_API_KEY: sk_07446a26743cda964c08eb02ae9f063e39720f9fc22237ea
+      #OPENAI_API_KEY: sk-ijklmnopqrstuvwxijklmnopqrstuvwxijklmnop
+      GEMINI_API_KEY: AIzaSyBkOA6IMCQSgfAnHY8AyUpRY5PERRU-FOA
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: hiring_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d hiring_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
