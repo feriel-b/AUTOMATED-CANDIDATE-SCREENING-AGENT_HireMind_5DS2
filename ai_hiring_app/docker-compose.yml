@@ -1,0 +1,36 @@
+services:
+  api:
+    image: ai_hiring_app-api:latest
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+    # This line is crucial: it makes our API wait for the DB to be ready before starting.
+    depends_on:
+      - db
+    # Pass database connection details to our FastAPI app as environment variables.
+    # The 'db' in the URL is the service name of our database container.
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/hiring_db
+
+  db:
+    # Use the official PostgreSQL 13 image from Docker Hub.
+    image: postgres:13
+    # This makes the database data persistent. The data will survive container restarts.
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    # These environment variables configure the PostgreSQL container.
+    # They MUST match the username, password, and db name in the DATABASE_URL above.
+    environment:
+      - POSTGRES_DB=hiring_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      # Optional: Exposing this port allows you to connect to the DB from your local machine
+      # with a GUI tool like DBeaver or pgAdmin for debugging.
+      - "5433:5432" # Mapping to 5433 on host to avoid conflicts with local Postgres
+
+# This defines the named volume that Docker will manage for our persistent data.
+volumes:
+  postgres_data:

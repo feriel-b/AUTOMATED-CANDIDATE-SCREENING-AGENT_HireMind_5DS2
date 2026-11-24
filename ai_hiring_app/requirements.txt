@@ -1,0 +1,60 @@
+# Web Framework & Server
+fastapi
+uvicorn[standard]
+pydantic
+
+# NLP for Resume Parsing
+spacy
+numpy<2.0.0
+
+# File Handling
+python-multipart
+pypdf
+python-docx
+
+# Database
+SQLAlchemy
+psycopg2-binary
+
+# ===============================================
+# Interview Simulator - Voice Analysis
+# ===============================================
+
+# PyTorch & Deep Learning
+# On Windows, install torch/torchaudio CPU wheels separately (large), so skip in requirements
+torch==2.1.2 ; sys_platform != 'win32'
+
+# HuggingFace Transformers
+transformers==4.36.2
+huggingface-hub
+
+# Audio Processing (torchaudio + ffmpeg cover our needs for Phase 1)
+torchaudio==2.1.2 ; sys_platform != 'win32'
+
+# ===============================================
+# Phase 2: Advanced Audio Analysis
+# ===============================================
+
+# Advanced Audio Processing
+librosa>=0.10.0
+scipy>=1.10.0
+
+# Speech Recognition for Transcript Analysis
+openai-whisper>=20231117
+
+# Additional Audio Analysis
+soundfile>=0.12.0
+imageio-ffmpeg>=0.4.9
+# WebRTC VAD: use prebuilt wheels on Windows to avoid needing MSVC Build Tools
+webrtcvad>=2.0.10 ; sys_platform != 'win32'
+webrtcvad-wheels>=2.0.10 ; sys_platform == 'win32'
+
+# ===============================================
+# AI Interview Simulator
+# ===============================================
+
+# Text-to-Speech
+gTTS>=2.4.0
+
+# Answer Evaluation (Semantic Similarity)
+sentence-transformers>=2.2.0
