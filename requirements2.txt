@@ -1,0 +1,85 @@
+# ============================================
+# CORE AI FRAMEWORK - LangChain Only (1.x)
+# ============================================
+langchain==1.0.2
+langchain-core==1.0.0
+langchain-ollama==1.0.0
+
+# Ollama Integration
+ollama==0.6.0
+
+# ============================================
+# WEB FRAMEWORK
+# ============================================
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# ============================================
+# ML/AI MODELS
+# ============================================
+torch>=2.0.0
+transformers==4.36.2
+tokenizers==0.15.2
+
+# ============================================
+# AUDIO PROCESSING
+# ============================================
+vosk==0.3.45
+librosa==0.10.1
+soundfile>=0.12.1
+moviepy>=1.0.3
+
+# ============================================
+# VIDEO/EMOTION ANALYSIS
+# ============================================
+deepface==0.0.95
+opencv-python>=4.8.0
+mediapipe==0.10.21
+
+# ============================================
+# TENSORFLOW (for DeepFace & MediaPipe compatibility)
+# ============================================
+tensorflow>=2.19.0,<=2.19.1
+tf-keras>=2.19.0,<=2.19.1
+protobuf>=4.25.3,<5.0.0
+numpy>=1.26.0,<2.0.0
+
+# ============================================
+# NLP - SpaCy
+# ============================================
+spacy>=3.7.2,<3.9.0
+typer>=0.9.0,<0.10.0
+
+# ============================================
+# UTILITIES
+# ============================================
+pydantic>=2.7.4,<3.0.0
+python-dotenv==1.0.0
+requests==2.31.0
+scipy>=1.11.0
+click==8.1.7
+
+# ============================================
+# ADDITIONAL REQUIRED DEPENDENCIES
+# ============================================
+clarifai-grpc>=10.11.2
+opentelemetry-proto==1.38.0
+pylance>=0.18.0
+
+# Audio Fingerprinting (with compatible typer version)
+pyannote.audio==3.1.1
+resemblyzer==0.1.1.dev0
+
+# Avatar Generation
+diffusers==0.25.0
+accelerate==0.25.0
+safetensors==0.4.1
+
+# CV Parsing
+pdfplumber==0.10.3
+python-docx==1.1.0
+
+# Streamlit compatibility
+rich>=10.14.0,<14.0.0
+streamlit>=1.30.0

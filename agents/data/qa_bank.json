@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "total_questions": 15,
+    "categories": [
+      "behavioral",
+      "technical",
+      "situational",
+      "leadership"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "category": "behavioral",
+      "question": "Tell me about a time you failed at something. What did you learn?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "mistake",
+        "learned",
+        "improved",
+        "experience"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 2,
+      "category": "behavioral",
+      "question": "Describe a situation where you had a conflict with a coworker. How did you resolve it?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "conflict",
+        "communication",
+        "resolved",
+        "teamwork"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 3,
+      "category": "behavioral",
+      "question": "Tell me about a project you're most proud of. What was your role?",
+      "difficulty": "easy",
+      "expected_keywords": [
+        "project",
+        "role",
+        "achieved",
+        "proud"
+      ],
+      "time_limit": 150
+    },
+    {
+      "id": 4,
+      "category": "behavioral",
+      "question": "Give an example of a goal you set and how you achieved it.",
+      "difficulty": "easy",
+      "expected_keywords": [
+        "goal",
+        "plan",
+        "achieved",
+        "success"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 5,
+      "category": "behavioral",
+      "question": "Describe a time when you had to work under pressure. How did you handle it?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "pressure",
+        "deadline",
+        "handled",
+        "managed"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 11,
+      "category": "technical",
+      "question": "Explain the difference between a list and a tuple in Python.",
+      "difficulty": "easy",
+      "expected_keywords": [
+        "mutable",
+        "immutable",
+        "list",
+        "tuple"
+      ],
+      "time_limit": 90
+    },
+    {
+      "id": 12,
+      "category": "technical",
+      "question": "What is the difference between SQL and NoSQL databases?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "relational",
+        "schema",
+        "scalability",
+        "ACID"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 13,
+      "category": "technical",
+      "question": "Explain how a RESTful API works.",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "HTTP",
+        "endpoints",
+        "GET",
+        "POST",
+        "stateless"
+      ],
+      "time_limit": 150
+    },
+    {
+      "id": 14,
+      "category": "technical",
+      "question": "What is machine learning, and how does it differ from traditional programming?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "data",
+        "patterns",
+        "algorithms",
+        "training"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 15,
+      "category": "technical",
+      "question": "Explain the concept of version control and why it's important.",
+      "difficulty": "easy",
+      "expected_keywords": [
+        "git",
+        "collaboration",
+        "history",
+        "branches"
+      ],
+      "time_limit": 90
+    },
+    {
+      "id": 21,
+      "category": "situational",
+      "question": "A client demands a feature that is technically impossible within the deadline. What do you do?",
+      "difficulty": "hard",
+      "expected_keywords": [
+        "communicate",
+        "alternative",
+        "negotiate",
+        "realistic"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 22,
+      "category": "situational",
+      "question": "You discover a critical bug in production right before a major launch. How do you handle it?",
+      "difficulty": "hard",
+      "expected_keywords": [
+        "prioritize",
+        "communicate",
+        "fix",
+        "stakeholders"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 23,
+      "category": "situational",
+      "question": "Your team disagrees on a technical approach. How do you reach a consensus?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "discussion",
+        "evaluate",
+        "pros and cons",
+        "decision"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 31,
+      "category": "leadership",
+      "question": "How do you motivate a team member who is struggling with their tasks?",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "support",
+        "feedback",
+        "resources",
+        "encourage"
+      ],
+      "time_limit": 120
+    },
+    {
+      "id": 32,
+      "category": "leadership",
+      "question": "Describe your leadership style and provide an example.",
+      "difficulty": "medium",
+      "expected_keywords": [
+        "style",
+        "example",
+        "team",
+        "results"
+      ],
+      "time_limit": 150
+    }
+  ]
+}

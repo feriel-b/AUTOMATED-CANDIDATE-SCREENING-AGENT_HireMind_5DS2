@@ -1,0 +1,57 @@
+# Web framework
+fastapi==0.109.0             # Modern Python API framework (async, type-safe)
+uvicorn[standard]==0.27.0    # ASGI server to run FastAPI
+python-multipart==0.0.6      # Required for file uploads in FastAPI
+
+# Speech-to-text (CPU-friendly)
+vosk==0.3.45                 # Offline speech recognition (no API calls needed)
+
+# Audio processing
+librosa==0.10.1              # Audio feature extraction (prosody, energy, pitch)
+soundfile==0.12.1            # Read/write audio files
+pyAudioAnalysis==0.3.14      # Additional audio features (speaking rate, pauses)
+pydub==0.25.1                # Audio conversion utilities
+praat-parselmouth==0.4.3     # 🆕 Voice stress analysis (pitch, jitter, shimmer)
+
+# Video processing (CPU-compatible)
+opencv-python==4.9.0.80      # 🆕 Video frame extraction, face detection
+opencv-contrib-python==4.9.0.80  # 🆕 Additional OpenCV modules
+
+# Emotion recognition (CPU-compatible)
+deepface==0.0.95             # 🆕 Facial emotion recognition (7 emotions)
+tensorflow>=2.16.0,<2.21.0
+tf-keras>=2.16.0,<2.21.0           # 🆕 TensorFlow CPU version (for emotion models)
+protobuf>=4.25.3,<5           # 🆕 Compatible version for TF 2.15 + DeepFace
+
+# Face detection (CPU-optimized)
+mediapipe>=0.10.13,<0.11.0           # 🆕 Lightweight face mesh tracking (Google)
+                             # Alternative to dlib (easier to install)
+
+# NLP and embeddings (CPU-optimized)
+spacy==3.7.2                 # Industrial-strength NLP
+sentence-transformers==2.3.1 # Semantic similarity (CPU-compatible models)
+transformers==4.36.2         # Hugging Face models (distilgpt2 for perplexity)
+torch>=2.2.0,<3.0.0                # PyTorch CPU version
+
+# Text analysis for cheating detection
+nltk==3.8.1                  # Natural Language Toolkit (n-gram fallback)
+
+# Database
+sqlalchemy==2.0.25           # SQL toolkit (works with SQLite)
+
+# Utilities
+python-dotenv==1.0.0         # Load environment variables from .env
+httpx==0.26.0                # Async HTTP client (for inter-service calls)
+pydantic==2.5.3              # Data validation (built into FastAPI)
+python-jose[cryptography]==3.3.0  # Optional: JWT tokens for authentication
+
+# Testing
+pytest==7.4.4                # Test framework
+pytest-asyncio==0.23.3       # Test async code
+
+# Optional: UI demo
+streamlit==1.30.0            # Simple web UI framework
+
+# Development tools (optional)
+black==23.12.1               # Code formatter
+flake8==7.0.0                # Linter
